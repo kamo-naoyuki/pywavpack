@@ -6,6 +6,7 @@ PyWavpack depends on [nanobind](https://github.com/wjakob/nanobind) to build a P
 - Python3.8+ or PyPy 7.3.10+
 - CMake 3.15+
 - A C++17 compiler: Clang 7+, GCC 8+, and MSVC2019+ are officially supported. Others (MinGW, Intel, NVIDIA, ..) may work as well but will not receive support.
+- Wavpack 5.6.0 Release
 
 
 Note that Wavpack is originally created by C-language, so the depenedency on C++ comes from this PyWavpack.
