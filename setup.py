@@ -13,10 +13,10 @@ except ImportError:
 setup(
     name="pywavpack",
     version="0.0.0",
-    author="Wenzel Jakob",
-    author_email="wenzel.jakob@epfl.ch",
+    author="Naoyuki Kamo",
+    author_email="naoyuki.kamo829@gmail.com",
     description="An example minimal project that compiles bindings using nanobind and scikit-build",
-    url="https://github.com/wjakob/pywavpack",
+    url="https://github.com/kamo-naoyuki/pywavpack",
     license="BSD",
     packages=['pywavpack'],
     package_dir={'': 'src'},
