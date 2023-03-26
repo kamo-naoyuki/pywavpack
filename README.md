@@ -33,6 +33,6 @@ array, rate = E.read("test.wv")
 Not yet
 
 
-### Miscellaneous
+## Miscellaneous
 
 Wavpack is a completely open source project under BSD-3-Clause license. Libsndfile is also under development to support Wavpack: https://github.com/libsndfile/libsndfile/issues/15 and https://github.com/libsndfile/libsndfile/pull/661. It's ideally to incorporate Wavpack in libsndfile, because it's useful to be aware of only an entrance library for the viewpoint of end users. If the wavpack supporting is completely finished in libsndfile, I might close this project.
