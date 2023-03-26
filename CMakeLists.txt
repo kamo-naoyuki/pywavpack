@@ -1,4 +1,4 @@
-project(nanobind_example)
+project(pywavpack)
 cmake_minimum_required(VERSION 3.18...3.22)
 
 if (NOT SKBUILD)
@@ -59,7 +59,7 @@ find_package(nanobind CONFIG REQUIRED)
 # We are now ready to compile the actual extension module
 nanobind_add_module(
   # Name of the extension
-  nanobind_example_ext
+  pywavpack_ext
 
   # Target the stable ABI for Python 3.12+, which reduces
   # the number of binary wheels that must be built. This
@@ -75,7 +75,7 @@ nanobind_add_module(
   NB_STATIC
 
   # Source code goes here
-  src/nanobind_example_ext.cpp
+  src/pywavpack_ext.cpp
 )
 
 # NOTE(kamo): Added to link WavPack
@@ -83,7 +83,7 @@ add_subdirectory(WavPack)
 # NOTE(kamo): I prefer static link, so I set POSITION_INDEPENDENT_CODE here.
 # FIXME(kamo): I'm not so familiar with c/c++. Please tell me if there are some concerns.
 set_target_properties(wavpack PROPERTIES POSITION_INDEPENDENT_CODE ON)
-target_link_libraries(nanobind_example_ext PRIVATE wavpack)
+target_link_libraries(pywavpack_ext PRIVATE wavpack)
 
 # Install directive for scikit-build
-install(TARGETS nanobind_example_ext LIBRARY DESTINATION .)
+install(TARGETS pywavpack_ext LIBRARY DESTINATION .)
