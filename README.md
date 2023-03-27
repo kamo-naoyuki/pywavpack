@@ -25,7 +25,7 @@ pip install pywavpack/
 
 ```python
 import pywavpack.pywavpack_ext as E
-array, rate = E.read("test.wv")
+numpy_ndarray, sampling_rate = E.read("test.wv")
 ```
 
 ### Writing API
