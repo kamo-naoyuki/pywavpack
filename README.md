@@ -25,6 +25,7 @@ pip install pywavpack/
 
 ```python
 import pywavpack.pywavpack_ext as E
+# Always returned as int32 ndarray
 numpy_ndarray, sampling_rate = E.read("test.wv")
 ```
 
