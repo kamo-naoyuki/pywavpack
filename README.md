@@ -15,8 +15,8 @@ Note that WavPack is originally created by C-language, so the depenedency on C++
 
 
 ```sh
-git clone --recursive https://github.com/kamo-naoyuki/pyWavPack.git
-pip install pyWavPack/
+git clone --recursive https://github.com/kamo-naoyuki/pywavpack.git
+pip install pywavpack/
 ```
 
 ## Usage (Under development)
@@ -24,8 +24,8 @@ pip install pyWavPack/
 ### Reading API
 
 ```python
-import pyWavPack.pyWavPack_ext as E
-# Always returned as int32 2d-array
+import pywavpack.pywavpack_ext as E
+# Always returned as int32 2d-array with the shape of (frames, channels)
 numpy_ndarray, sampling_rate = E.read("test.wv")
 ```
 
